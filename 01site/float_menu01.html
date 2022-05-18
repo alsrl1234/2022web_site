@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float_menu01</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        li{list-style: none;}
+        div.headerWrap{width: 1200px;background-color: aqua;margin: 0 auto;}
+        div.headerWrap>h1{width: 150px;background-color: pink;line-height: 100px;text-align: center;float: left;}
+        div.headerWrap::after{content: "";display: block;clear: both;}
+        div.headerWrap>nav.navbar>ul{width: 800px;background-color: green;float: right;}
+        div.headerWrap>nav.navbar>ul>li{width: 25%;text-align: center;line-height: 100px; float: left;}
+        div.headerWrap>nav.navbar::after{content: "";display: block;clear: both;}
+        div.visual{width: 100%;height: 400px;background-color: #f0f;}
+        section.section{width: 1200px;margin: 0 auto;}
+        section.section>.contents{width: 740px;height: 500px;background-color: gray; float: left;}
+        section.section>.aside{width: 440px;height: 500px;background-color: black;float: right;}
+        section.section::after{content: "";display: block;clear: both;}
+        footer.footer{width: 100%;height: 200px;background-color: yellow;}
+    </style>
+</head>
+<body>
+    <div class="headerWrap">
+        <h1>Logo</h1>
+        <nav class="navbar">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="visual"></div>
+    <section class="section">
+        <div class="contents"></div>
+        <div class="aside"></div>
+    </section>
+    <footer class="footer"></footer>
+    
+</body>
+</html>
