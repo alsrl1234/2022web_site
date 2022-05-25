@@ -36,6 +36,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .mainMenuWrap .mainMenu{width: 980px;margin: 0 auto;}
 .mainMenuWrap ul{}
 .mainMenuWrap li{float: left;width: calc( 100% / 6 ); border-left: 1px solid #336dac;}
+.mainMenuWrap li:last-child{border-right: 1px solid #336dac;}
 .mainMenuWrap .mainMenu li a{color: #eaeef4; line-height: 45px;text-align: center;display: block;}
 
 
