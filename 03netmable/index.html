@@ -16,35 +16,49 @@
     <script src="../js/jquery.bxslider.js"></script>
     
     <style>
-        .menuWrap{width: 100%; height: 80px; background-color: white;}
-        .menu{width: 1200px;height: 80px; background-color: pink; margin: 0 auto;}
-        .menu li{float: right; line-height: 80px; color: #333; font-size: 20px; letter-spacing: -3%;margin-left: 95px;font-weight: bold;}
-        .menu h1{float: left; padding-top: 20px;}
+        .menuWrap{width: 100%; height: 76px; background-color: white;}
+        .menu{width: 1280px;height: 76px; background-color: pink; margin: 0 auto;}
+        .menu li{width: calc( 510px / 3 );text-align: center; float: right; line-height: 76px; color: #333;  font-size: 20px; letter-spacing: -3%;font-weight: bold;}
+        .menu h1{float: left; padding: 20px 0 0 32px;}
         
 
         body{background-color: gray;font-family: 'Noto Sans KR', sans-serif;}
 
         .visual{width: 1920px; margin: 0 auto;}
         .visual .txtWrap{width: 1200px; margin: 0 auto; position: relative;}
-        .visual .txt{position: absolute;top: 450px;line-height: 100px;}
-        .visual h3{font-size: 80px; font-weight: bold;letter-spacing: -3%; color: white;}
+        .visual .txt{position: absolute;top: 400px;line-height: 100px;}
+        .visual h2{font-size: 80px; font-weight: bold;letter-spacing: -3%; color: white;}
         .visual p{font-size: 24px;letter-spacing: -3%;;color: white;}
         
         .bx-wrapper {box-shadow: none;border: none;}
-        .bx-wrapper .bx-pager.bx-default-pager a {
-            margin: 50px 5px;
-        }
+        .bx-wrapper .bx-pager.bx-default-pager a {margin: 50px 5px;}
+
+        .sec1{width: 1280px;height: 480px;background-color: skyblue;margin: 0 auto;padding: 0 32px;}
+        .sec1 h3{font-size: 43px;font-weight: bold;line-height: 62px;letter-spacing: -3%;padding-top: 168px;}
+        .sec1 .sec_border{width: 70px;height: 20px;border-bottom: 5px solid #FFD44A;}
+        .sec1 p{float: right;font-size: 18px;line-height: 28px;letter-spacing: -3.5%;}
+
+        .sec2{width: 1280px;margin: 0 auto;padding: 0 32px;}
+        .sec2 ul::after{content: "";display: block;clear: both;}
+        .sec2 li{float: left; margin-right: 32px; margin-bottom: 184px;}
+        .sec2 li:last-child{float: left; margin-right: 0px;}
+        .sec2 h4{font-size: 20px;font-weight: bold;line-height: 28px;padding: 15px 18px;}
+        .sec2 p{font-size: 14px;line-height: 24px;letter-spacing: 1%;padding: 0 18px;}
+
+        .sec3{width: 1280px;margin: 0 auto;}
+        .sec3_txt{width: 1114px;padding: 107px 105px;background-color: #FFD44A;}
+        .sec3 h5{font-size: 30px;font-weight: 200;  line-height: 39px;letter-spacing: -8.5%;}
+        .sec3 span{font-weight:bold}
+
+
+
     </style>
 
     <script>
         $(document).ready(function(){
             $(".slide1").bxSlider({
-            
             });
-            
         })
-
-
     </script>    
 
 </head>
@@ -53,9 +67,9 @@
         <div class="menu">
             <ul class="clearfix">
                 <h1><a href=""><img src="./images/mainlogo.png" alt=""></a></h1>
-                <li><a href="">재단소개</a></li>
-                <li><a href="">재단활동</a></li>
                 <li><a href="">재단소식</a></li>
+                <li><a href="">재단활동</a></li>
+                <li><a href="">재단소개</a></li>
             </ul>
         </div>
     </div>
@@ -64,7 +78,7 @@
            <li>
                <div class="txtWrap">
                    <div class="txt">
-                       <h3>게임소통교육</h3>
+                       <h2>게임소통교육</h3>
                        <p>게임으로 소통하고 게임으로 가까워지는 가족</p>
                    </div>
                </div>
@@ -73,7 +87,7 @@
            <li>
                <div class="txtWrap">
                    <div class="txt">
-                       <h3>전국 장애학생<br>e페스티벌</h3>
+                       <h2>전국 장애학생<br>e페스티벌</h3>
                        <p>게임 안에서 하나 되는 모두의 축제</p>
                    </div>
                </div>
@@ -82,7 +96,7 @@
            <li>
                <div class="txtWrap">
                    <div class="txt">
-                       <h3>견학프로그램</h3>
+                       <h2>견학프로그램</h3>
                        <p>나의 게임 산업 탐방기</p>
                    </div>
                </div>
@@ -91,7 +105,7 @@
            <li>
                <div class="txtWrap">
                    <div class="txt">
-                       <h3>게임아카데미</h3>
+                       <h2>게임아카데미</h3>
                        <p>미래의 꿈 게임에 담다</p>
                    </div>
                </div>
@@ -100,14 +114,47 @@
            <li>
                <div class="txtWrap">
                    <div class="txt">
-                       <h3>어깨동무문고</h3>
+                       <h2>어깨동무문고</h3>
                        <p>다름을 이해하는 모두의 동화</p>
                    </div>
                </div>
                <img src="images/banner05.jpg" alt="">
            </li>
-           
        </ul>
    </div>
+   <div class="sec1">
+       <div class="sec1_txt clearfix">
+           <h3>문화를 만들고 인재를 키우고<br>마음을 나눕니다</h3>
+           <div class="sec_border"></div>
+           <p>넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자<br>다양한 공약 활동을 전개해 나가고 있습니다.</p>
+       </div>
+   </div>
+   <div class="sec2">
+       <ul class="clearfix">
+           <li>
+                <img src="./images/secimg01.jpg" alt="">
+                <h4>문화 만들기 ></h4>
+                <p>게임을 기반으로 다양한 문화적 가치를 공유하고 누구나<br>즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.</p>
+           </li>
+           <li>
+                <img src="./images/secimg02.jpg" alt="">
+                <h4>문화 만들기 ></h4>
+                <p>게임을 기반으로 다양한 문화적 가치를 공유하고 누구나<br>즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.</p>
+           </li>
+           <li>
+                <img src="./images/secimg03.jpg" alt="">
+                <h4>문화 만들기 ></h4>
+                <p>게임을 기반으로 다양한 문화적 가치를 공유하고 누구나<br>즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.</p>
+           </li>
+       </ul>
+    </div>
+    
+    <div class="sec3">
+        <div class="sec3_txt">
+            <h5>우리는 <span>문화적 가치를 확산</span>하여 우리 사회의<br>미래 경쟁력을 높여갑니다</h5>
+            <p>주요목적</p>
+        </div>
+        <img src="./images/secimg04.jpg" alt="">
+    </div>
 </body>
 </html>
