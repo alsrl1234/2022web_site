@@ -10,7 +10,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"    rel="stylesheet">
-   
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery.bxslider.js"></script>
+    <style>
+        .bx-wrapper {
+            -moz-box-shadow: 0 0 5px #ccc;
+            -webkit-box-shadow: 0 0 5px #ccc;
+             box-shadow: 0 0 0px #ccc;
+             border: 0px solid #fff;
+            background: #fff;
+             }
+
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $(".slide1").bxSlider({
+                auto:true,
+                mode:'vertical',
+                controls:false
+
+            });
+            $(".slide2").bxSlider();
+        })
+        
+    </script>
 </head>
 <body>
     <header>
@@ -107,10 +132,54 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
+                    <li>
+                        <div class="Txt04">
+                            <p>SNS NEWS</p>
+                            <div class="info clearfix">
+                                <img src="./images/info.png" alt="">
+                                <div class="subTex">
+                                고려 대학교는<br>2022학년도 신입생<br>입학식을 3월 2일<br>본교 종합체육관...
+                                </div>
+                                <ul class="linkIcon">
+                                    <li>
+                                        <a href=""><img src="./images/페이스북.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="./images/트위터1.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="./images/구글.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="./images/유튜브2.png" alt=""></a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">캠퍼스투어</a>
+                    </li>
+                    <li></li>
+                    <li>
+                        <div class="Txt05">
+                            <p>2022년신,편입생2차모집</p><br><span>2022.7.7~7.10</span>
+                            <button class="bt03"><a href="">입삭사전예약 ><a></button>
+                        </div>
+                        <ul class="slide2">
+                            <li>
+                                <img src="./images/subBg1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/subBg2.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/subBg3.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/subBg4.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
         </div>
