@@ -15,25 +15,36 @@
     <script src="../js/jquery.bxslider.js"></script>
     <style>
         .bx-wrapper {
-            -moz-box-shadow: 0 0 5px #ccc;
-            -webkit-box-shadow: 0 0 5px #ccc;
-             box-shadow: 0 0 0px #ccc;
-             border: 0px solid #fff;
+            -webkit-box-shadow: 0 0 0px #ccc;
+            box-shadow: 0 0 0px #ccc;
             background: #fff;
-             }
+            border: none;
+        }
+        
+        .bx-wrapper .bx-pager{
+            bottom:30px
+        }
 
+        .slide2Wrap .bx-wrapper .bx-pager,
+        .slide2Wrap .bx-wrapper .bx-controls-auto {
+             top: 0;
+            right: 20px;
+            width: 200px;
+            
+        }
+    
+        .bx-wrapper .bx-pager.bx-default-pager a:hover,
+        .bx-wrapper .bx-pager.bx-default-pager a.active,
+        .bx-wrapper .bx-pager.bx-default-pager a:focus {
+            background: #740321;
+        }
     </style>
 
     <script>
         $(document).ready(function(){
-            $(".slide1").bxSlider({
-                auto:true,
-                mode:'vertical',
-                controls:false
-
-            });
+            $(".slide1").bxSlider();
             $(".slide2").bxSlider();
-        })
+        });
         
     </script>
 </head>
@@ -97,8 +108,36 @@
             <section class="sec02">
                 <ul class="clearfix">
                     <li>
-                        <h3><span>고려</span>에서<br><span>시작</span>하는<br>새로운 <span>꿈</span></h3>
-                        <button class="bt01"><a href="">자세히보기 ></a></button>
+                        <ul class="slide1">
+                            <li>
+                                <div class="slide1_box">
+                                    <h3><span>고려</span>에서<br><span>시작</span>하는<br>새로운 <span>꿈</span></h3>
+                                    <button class="bt01"><a href="">자세히보기 ></a></button>
+                                </div>
+                                <img src="./images/sec01_Bg01.png" alt="">
+                            </li>
+                            <li>
+                                <div class="slide1_box">
+                                    <h3><span>고려</span>에서<br><span>시작</span>하는<br>새로운 <span>꿈</span></h3>
+                                    <button class="bt01"><a href="">자세히보기 ></a></button>
+                                </div>
+                                <img src="./images/sec01_Bg02.png" alt="">
+                            </li>
+                            <li>
+                                <div class="slide1_box">
+                                    <h3><span>고려</span>에서<br><span>시작</span>하는<br>새로운 <span>꿈</span></h3>
+                                    <button class="bt01"><a href="">자세히보기 ></a></button>
+                                </div>
+                                <img src="./images/sec01_Bg03.png" alt="">
+                            </li>
+                            <li>
+                                <div class="slide1_box">
+                                    <h3><span>고려</span>에서<br><span>시작</span>하는<br>새로운 <span>꿈</span></h3>
+                                    <button class="bt01"><a href="">자세히보기 ></a></button>
+                                </div>
+                                <img src="./images/sec01_Bg04.png" alt="">
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <div class="Txt01">
@@ -160,22 +199,46 @@
                         <a href="">캠퍼스투어</a>
                     </li>
                     <li></li>
-                    <li>
-                        <div class="Txt05">
-                            <p>2022년신,편입생2차모집</p><br><span>2022.7.7~7.10</span>
-                            <button class="bt03"><a href="">입삭사전예약 ><a></button>
-                        </div>
+                    <li class="slide2Wrap">
                         <ul class="slide2">
                             <li>
+                                <div class="slide2_box">
+                                    <p>2022년신,편입생2차모집</p>
+                                    <span>2022.7.7~7.10</span>
+                                    <button class="bt03">
+                                        <a href="#">입학사전예약 ></a>
+                                    </button>
+                                </div>
                                 <img src="./images/subBg1.png" alt="">
                             </li>
                             <li>
+                                <div class="slide2_box">
+                                    <p>2022년신,편입생2차모집</p>
+                                    <span>2022.7.7~7.10</span>
+                                    <button class="bt03">
+                                        <a href="#">입학사전예약 ></a>
+                                    </button>
+                                </div>
                                 <img src="./images/subBg2.png" alt="">
                             </li>
                             <li>
+                                <div class="slide2_box">
+                                    <p>2022년신,편입생2차모집</p>
+                                    <span>2022.7.7~7.10</span>
+                                    <button class="bt03">
+                                        <a href="#">입학사전예약 ></a>
+                                    </button>
+                                </div>
                                 <img src="./images/subBg3.png" alt="">
                             </li>
                             <li>
+                                <div class="slide2_box">
+                                    <p>2022년신,편입생2차모집</p>
+                                    <span>2022.7.7~7.10</span>
+                                    <button class="bt03">
+                                        <a href="#">입학사전예약 ></a>
+                                    </button>
+                                </div>
                                 <img src="./images/subBg4.png" alt="">
                             </li>
                         </ul>
