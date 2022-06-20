@@ -36,7 +36,8 @@
 .visualBg>img{width: 100%;height: 1300px;opacity: 0.5;position: relative;}
 .sec1{width: 1200px;height: 258px;position: absolute;top: 0;left: 150px;padding: 69px 0;background-color: #740321;} */
 
-.visualBg{width: 100%;height: 1300px;margin: 0 auto;background-image: url(../images/bgimg.png);background-size: cover;background-position: center;position: relative;}
+.visualBg{width: 100%;height: 1300px;margin: 0 auto;background-image: url(../images/bgimg1.png);background-size: cover;background-position: center;position: relative;}
+.visualBg>img{width: 100%;height: 1300px;opacity: 0.3;}
 .contentWrap{width: 1200px;height: 1150px;position: absolute;top: 0;left: 50%;transform: translateX(-50%);}
 .sec01{width: 1200px;height: 258px;padding: 69px 0;}
 
