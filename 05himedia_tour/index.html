@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tour</title>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            var slide = $(".slide").bxSlider({
+                
+            });
+        }  
+        )
+    </script>
+
 </head>
 <body>
     <header class="headerWrap">
@@ -24,12 +36,12 @@
                     <input type="text" name="search" placeholder="검색어를 입력하세요" class="inp">
                 </form>
                 <p class="title">SEARCH</p>
-                <div class="ser_icon">
+                <div class="search_icon">
                     <a href=""></a>
                 </div>
                 <div class="link_icon">
                     <ul>
-                        <li><a href=""><img src="./images/유튜브1.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/트위터2.png" alt=""></a></li>
                         <li><a href=""><img src="./images/네이버밴드.png" alt=""></a></li>
                         <li><a href=""><img src="./images/인스타그램1.png" alt=""></a></li>
                         <li><a href=""><img src="./images/카카오톡.png" alt=""></a></li>
@@ -50,5 +62,72 @@
             </div>
         </div>
     </header>
+    <section>
+        <div class="section_wrap clearfix">
+            <img class="ani01" src="./images/02풍선.png" alt="">
+            <img class="ani02" src="./images/reallyAir.png" alt="">
+            <div class="section01 clearfix">
+                <div class="reserv">
+
+                </div>
+                <div class="slide01">
+                    <ul class="slide">
+                        <li class="a">
+                            hgfjhkljhklfjhklfg
+                        </li>
+                        <li class="b">
+                           5555asdasdadsasas
+                        </li>
+                        <li class="c">
+                           6666
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide02">
+                    2
+                </div>
+            </div>
+            <div class="section02">
+                <h2>TRAVEL <span>GO</span></h2>
+                <p>지금,여행이 떠나고 싶다면?<br>인터파크와 여행을 떠나자!</p>
+            </div>
+            <div class="section03">
+                <ul class="clearfix">
+                    <li>
+                        <div class="slide03">
+                            3
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide04">
+                            4
+                        </div>
+                    </li>
+                    <li>
+                        5
+                    </li>
+                    <li>
+                       6 
+                    </li>
+                </ul>
+            </div>
+            <div class="section04">
+                <ul class="clearfix">
+                    <li>
+                        7
+                    </li>
+                    <li>
+                        8
+                    </li>
+                    <li>
+                        9
+                    </li>
+                    <li>
+                        10
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

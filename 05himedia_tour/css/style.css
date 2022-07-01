@@ -1,32 +1,97 @@
 @charset "utf-8";
-body{font-family: 'Noto Sans KR'}
-
+html,body{height: 100%;}
+body{font-family: 'Noto Sans KR';}
 /* .header_bn{height: 90px;background-image: url(../images/header.png);background-size: cover;} */
 
-.searchWrap{background-color: white;}
+.searchWrap{margin: 0 auto; width: 1980px; background-color: white;background-image: url(../images/04비행기필터_보라.png);background-repeat: no-repeat;background-position-x: 530px;background-size: cover;}
+
+
 .search_area{width: 980px;height: 90px;margin: 0 auto;position: relative;}
-.search_area .logo_box{padding: 26px 0;}
+.search_area .logo_box{height: 45px;padding-top: 26px;}
 .search_area .tour{float: left;}
 .search_area .interpark{width: 140px;height: 33px;float: left;}
 
 .search_area .inp{width: 384px;height: 44px;text-indent: 90px;border: 2px solid #E25147;position: absolute;top: 50%;left:calc( 50% - 192px);transform:translateY(-50%);}
-p.title,.ser_icon{position: absolute;top: 50%;left:calc( 50% + 150px);transform:translateY(-50%)}
+p.title,.search_icon{position: absolute;top: 50%;left:calc( 50% + 150px);transform:translateY(-50%)}
 p.title{left:calc( 50% - 180px);line-height: 14px;font-weight: bold;}
-.search_area .ser_icon{width: 42px;height: 42px;background-image: url(../images/search.png);background-color: #E25147;background-repeat: no-repeat;background-position: 50% 50%;}
+.search_area .search_icon{width: 42px;height: 42px;background-image: url(../images/search.png);background-color: #E25147;background-repeat: no-repeat;background-position: 50% 50%;}
 .search_area .inp:focus{outline:none}
-.search_area .link_icon{height: 44px;background-color: pink;}
-.search_area .link_icon li{width: 44px;height: 44px;}
+.search_area .link_icon{height: 45px;position: absolute;top: 50%;right: 30px;transform: translateY(-50%);}
+.search_area .link_icon ul{display: flex;}
+.search_area .link_icon li{width: 44px;height: 44px;margin-left: 5px;}
 .search_area .link_icon img{width: 100%;}
-
-
 
 
 .menuWrap{background-color: #E25147;}
 .menu_area{width: 980px;height: 64px;margin: 0 auto;}
 .menu_area>ul{display: flex;}
-.menu_area li{width: calc( 100% / 6 );text-align: center;line-height: 64px;border-right: 1px solid #888;font-size: 18px;}
-.menu_area li:nth-child(1){border-left: 1px solid #888;}
+.menu_area li{width: calc( 100% / 6 );text-align: center;line-height: 64px;font-size: 18px;background-image: url(../images/header_bg_dvd.gif);background-repeat: no-repeat;background-position: 0 50%;}
+.menu_area li:nth-child(1){background-image: none;}
 .menu_area a{width: 100%;height: 100%;color: white;}
 .menu_area li:hover{background-color: white;border: 0;}
 .menu_area li:hover a{color: black;}
 
+section{height: 100%; background-image: url(../images/03배경필터.png);background-repeat: no-repeat;background-position: center;
+background-size: cover;padding-top: 60px;  
+}
+section .section_wrap{width: 980px;height: 1067px;margin: 0 auto;position: relative;}
+
+section .ani01{
+    position: absolute;
+    right: -80px;
+    top: 100px;animation-name: bal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+section .ani02{
+    position: absolute;
+    left: 50%;
+    top: 50%;animation-name: bal02;
+    transform: translate(-50%, -50%);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bal{
+    from{transform: translateY(30px);}
+    to{transform: translateY(0px);}
+}
+
+@keyframes bal02{
+    from{transform: translate(-1000px,300px);}
+    to{transform: translate(1000px,-1000px);}
+}
+
+
+section .section01{width: 482px;height: 556px;background-color: #999;position: absolute;top: 0;left: 0;}
+section .section02{width: 482px;height: 556px;position: absolute;top: 0;right: 0;padding: 32px 24px;}
+section .section03{width: 482px;height: 495px;background-color: #555; position: absolute;bottom: 0; left: 0;}
+section .section04{width: 482px;height: 495px;background-color: #222;position: absolute;bottom: 0;right: 0;}
+
+.section01 .reserv{width: 482px;height: 300px;background-color: palegreen;margin-bottom: 16px;}
+.section01 .slide01{width: 233px;height: 240px;background-color: pink;margin-right: 16px;float: left;}
+.section01 .slide01 li{width: 233px;height: 240px;}
+.section01 .slide01 li.a{background-image: url(../images/03여행01.jpg);}
+.section01 .slide01 li.b{background-image: url(../images/03여행02.jpg);}
+.section01 .slide01 li.c{background-image: url(../images/03여행03.jpg);}
+
+
+
+
+.section01 .slide02{width: 233px;height: 240px;background-color: pink;float: left;background-image: url(../images/03여행02.jpg);}
+
+.section02 h2{font-size: 64px;font-weight: bold;letter-spacing: 1px;line-height: 50px;}
+.section02 span::after{content: "";display: block;width: 80px;height: 4px;background-color: #222;margin: 10px 0 10px 274px;}
+.section02 p{font-size: 32px;line-height: 40px;}
+
+
+.section03 li{width: 233px;height: 240px;background-color: skyblue;float: left;}
+.section03 li:nth-child(1){margin-bottom: 16px;margin-right: 16px;}
+.section03 li:nth-child(3){margin-right: 16px;}
+
+.section04 li{width: 233px;height: 240px;background-color: skyblue;float: left;}
+.section04 li:nth-child(1){margin-bottom: 16px;margin-right: 16px;}
+.section04 li:nth-child(3){margin-right: 16px;}
