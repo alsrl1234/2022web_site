@@ -72,11 +72,14 @@ section .section03{width: 482px;height: 495px;background-color: #555; position: 
 section .section04{width: 482px;height: 495px;background-color: #222;position: absolute;bottom: 0;right: 0;}
 
 .section01 .reserv{width: 482px;height: 300px;background-color: palegreen;margin-bottom: 16px;}
-.section01 .slide01{width: 233px;height: 240px;background-color: pink;margin-right: 16px;float: left;}
+.section01 .slide01{width: 233px;height: 240px;background-color: pink;margin-right: 16px;float: left;position: relative;}
 .section01 .slide01 li{width: 233px;height: 240px;}
 .section01 .slide01 li.a{background-image: url(../images/03여행01.jpg);}
 .section01 .slide01 li.b{background-image: url(../images/03여행02.jpg);}
 .section01 .slide01 li.c{background-image: url(../images/03여행03.jpg);}
+
+.section01 .slide01 p{width: 233px;height: 50px;background-color:rgb(78, 69, 109) ;position: absolute;bottom: 0;line-height: 50px;text-align: center;color: white;}
+.section01 .slide01 span{margin: 0 15px;color: gold;}
 
 
 
