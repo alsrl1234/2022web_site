@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,27 +11,48 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        $(document).ready(function(){
-            var slide = $(".slide").bxSlider({
-                
+        $(document).ready(function () {
+            $(".slider01").bxSlider({
+                controls: false,
+                pagerCustom: ".rsv_menu"
             });
-        }  
-        )
+
+            $(".slider02").bxSlider();
+
+            $(".slider03").bxSlider({
+                pager: false
+            });
+
+
+        }
+        );
+
+      
+
+
+
     </script>
 
+
 </head>
+
 <body>
     <header class="headerWrap">
         <!-- <div class="header_bn">1</div> -->
         <div class="searchWrap">
             <div class="search_area">
                 <h1 class="logo_box clearfix">
-                    <a href=""class="tour"><img src="./images/tour_logo.jpg" alt=""></a>
-                    <a href=""class="interpark"><img src="./images/interpark_logo.jpg" alt=""></a>
+                    <a href="" class="tour"><img src="./images/tour_logo.jpg" alt=""></a>
+                    <a href="" class="interpark"><img src="./images/interpark_logo.jpg" alt=""></a>
                 </h1>
                 <form action="">
                     <input type="text" name="search" placeholder="검색어를 입력하세요" class="inp">
@@ -64,70 +86,206 @@
     </header>
     <section>
         <div class="section_wrap clearfix">
-            <img class="ani01" src="./images/02풍선.png" alt="">
-            <img class="ani02" src="./images/reallyAir.png" alt="">
+            <img class="ani01" src="./images/content1.png" alt="">
+            <img class="ani02" src="./images/content2.png" alt="">
+            <img class="ani03" src="./images/content3.png" alt="">
+            <img class="ani04" src="./images/reallyAir.png" alt="">
             <div class="section01 clearfix">
-                <div class="reserv">
-
+                <div class="reserv_wrap">
+                    <ul class="slider01">
+                        <li>
+                            <form action="" name="reserv" method="post" class="clearfix">
+                                <p>가고싶은 나라를 선택하세요.<br><input type="text" class="inp_text" placeholder="선택하세요."><span
+                                        class="icon1">예약</span></p>
+                                <p>출발일<br><input type="text" class="inp_text" placeholder="2022/01/01"><span
+                                        class="icon2">예약</span></p>
+                                <p>도착일<br><input type="text" class="inp_text" placeholder="2022/01/01"><span
+                                        class="icon2">예약</span></p>
+                                <p>좌석등급<br><input type="text" class="inp_text" placeholder="일반석"><span
+                                        class="icon1">예약</span></p>
+                                <p>성인<br><input type="text" class="inp_text" placeholder="00"><span
+                                        class="icon1">예약</span></p>
+                                <p>아이<br><input type="text" class="inp_text" placeholder="00"><span
+                                        class="icon1">예약</span></p>
+                                <button><a href="">검색하기</a></button>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="" name="reserv" method="post" class="clearfix">
+                                <p>예약하실 호텔을 선택하세요.<br><input type="text" class="inp_text" placeholder="선택하세요."><span
+                                        class="icon1">예약</span></p>
+                                <p>체크인<br><input type="text" class="inp_text" placeholder="2022/01/01"><span
+                                        class="icon2">예약</span></p>
+                                <p>체크아웃<br><input type="text" class="inp_text" placeholder="2022/01/01"><span
+                                        class="icon2">예약</span></p>
+                                <p>객실등급<br><input type="text" class="inp_text" placeholder="일반석"><span
+                                        class="icon1">예약</span></p>
+                                <p>성인<br><input type="text" class="inp_text" placeholder="00"><span
+                                        class="icon1">예약</span></p>
+                                <p>아이<br><input type="text" class="inp_text" placeholder="00"><span
+                                        class="icon1">예약</span></p>
+                                <button><a href="">검색하기</a></button>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="" name="reserv" method="post" class="clearfix">
+                                <p>렌트업체를 선택하세요.<br><input type="text" class="inp_text" placeholder="선택하세요."><span
+                                        class="icon1">예약</span></p>
+                                <p>대여일<br><input type="text" class="inp_text" placeholder="2022/01/01"><span
+                                        class="icon2">예약</span></p>
+                                <p>반납일<br><input type="text" class="inp_text" placeholder="2022/01/01"><span
+                                        class="icon2">예약</span></p>
+                                <p>차량등급<br><input type="text" class="inp_text" placeholder="SUV"><span
+                                        class="icon1">예약</span></p>
+                                <p>차량종류<br><input type="text" class="inp_text" placeholder="중형"><span
+                                        class="icon1">예약</span></p>
+                                <p>연료종류<br><input type="text" class="inp_text" placeholder="디젤"><span
+                                        class="icon1">예약</span></p>
+                                <button><a href="">검색하기</a></button>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="" name="reserv" method="post" class="clearfix">
+                                <p>가고싶은 나라를 선택하세요.<br><input type="text" class="inp_text" placeholder="선택하세요."><span
+                                        class="icon1">예약</span></p>
+                                <p>출발일<br><input type="text" class="inp_text" placeholder="2022/01/01"><span
+                                        class="icon2">예약</span></p>
+                                <p>도착일<br><input type="text" class="inp_text" placeholder="2022/01/01"><span
+                                        class="icon2">예약</span></p>
+                                <p>좌석등급<br><input type="text" class="inp_text" placeholder="일반석"><span
+                                        class="icon1">예약</span></p>
+                                <p>성인<br><input type="text" class="inp_text" placeholder="00"><span
+                                        class="icon1">예약</span></p>
+                                <p>아이<br><input type="text" class="inp_text" placeholder="00"><span
+                                        class="icon1">예약</span></p>
+                                <button><a href="">검색하기</a></button>
+                            </form>
+                        </li>
+                    </ul>
+                    <div class="rsv_menu">
+                        <a href="" data-slide-index="0"><span><img src="./images/공항.png" alt=""></span>공항예약</a>
+                        <a href="" data-slide-index="1"><span><img src="./images/호텔.png" alt=""></span>호텔예약</a>
+                        <a href="" data-slide-index="2"><span><img src="./images/렌트.png" alt=""></span>렌트카</a>
+                        <a href="" data-slide-index="3"><span><img src="./images/휴양.png" alt=""></span>휴양지</a>
+                    </div>
                 </div>
-                <div class="slide01">
-                    <ul class="slide">
+                <div class="content1">
+                    <ul class="slider02">
                         <li class="a">
-                            <p>프랑스<span>&#8361 1,923,000 ~</span></p>
+                            <p>이탈리아<span>&#8361 1,923,000 ~</span></p>
                         </li>
                         <li class="b">
-                           5555asdasdadsasas
+                            <p>미국<span>&#8361 1,923,000 ~</span></p>
                         </li>
                         <li class="c">
-                           6666
+                            <p>프랑스<span>&#8361 1,923,000 ~</span></p>
                         </li>
                     </ul>
                 </div>
-                <div class="slide02">
-                    2
+                <div class="content2">
+                    <ul class="slider02">
+                        <li class="a">
+                            <p>홍콩<span>&#8361 1,923,000 ~</span></p>
+                        </li>
+                        <li class="b">
+                            <p>베트남<span>&#8361 1,923,000 ~</span></p>
+                        </li>
+                        <li class="c">
+                            <p>일본<span>&#8361 1,923,000 ~</span></p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="section02">
                 <h2>TRAVEL <span>GO</span></h2>
                 <p>지금,여행이 떠나고 싶다면?<br>인터파크와 여행을 떠나자!</p>
             </div>
-            <div class="section03">
-                <ul class="clearfix">
-                    <li>
-                        <div class="slide03">
-                            3
+
+            <style>
+               
+            </style>
+            <div class="section03 clearfix">
+                <div class="content1">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="a swiper-slide" style="background-image: url(images/hongkong.jpg);">1
+                                <p>홍콩<span>&#8361 1,923,000 ~</span></p>
+                            </div>
+                            <div class="b swiper-slide" style="background-image: url(images/vietnam.jpg);">2
+                                <p>베트남<span>&#8361 1,923,000 ~</span></p>
+                            </div>
+                            <div class="c swiper-slide" style="background-image: url(images/japan.jpg);">3
+                                <p>일본<span>&#8361 1,923,000 ~</span></p>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="slide04">
-                            4
+                        
+                    </div>
+                    <div class="s1next"><img src="images/next.png" alt=""></div>
+                    <div class="s1prev"><img src="images/prev.png" alt=""></div>
+
+                    
+                    
+                </div>
+                
+                
+                
+                <div class="content2">
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="a swiper-slide" style="background-image: url(images/hongkong.jpg);">1
+                                <p>홍콩<span>&#8361 1,923,000 ~</span></p>
+                            </div>
+                            <div class="b swiper-slide" style="background-image: url(images/vietnam.jpg);">2
+                                <p>베트남<span>&#8361 1,923,000 ~</span></p>
+                            </div>
+                            <div class="c swiper-slide" style="background-image: url(images/japan.jpg);">3
+                                <p>일본<span>&#8361 1,923,000 ~</span></p>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        5
-                    </li>
-                    <li>
-                       6 
-                    </li>
-                </ul>
+                        
+                    </div>
+                    <div class="s2next"><img src="images/next.png" alt=""></div>
+                    <div class="s2prev"><img src="images/prev.png" alt=""></div>
+                </div>
+                <div class="content3">
+                    5
+                </div>
+                <div class="content4">
+                    6
+                </div>
             </div>
-            <div class="section04">
-                <ul class="clearfix">
-                    <li>
-                        7
-                    </li>
-                    <li>
-                        8
-                    </li>
-                    <li>
-                        9
-                    </li>
-                    <li>
-                        10
-                    </li>
-                </ul>
+            <div class="section04 clearfix">
+                <div class="content1">
+                    7
+                </div>
+                <div class="content2">
+                    8
+                </div>
+                <div class="content3">
+                    9
+                </div>
+                <div class="content4">
+                    10
+                </div>
             </div>
         </div>
     </section>
+    <script>
+          new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".s1next",
+                prevEl: ".s1prev",
+            },
+        });
+        new Swiper(".mySwiper1", {
+            loop: true,
+            navigation: {
+                nextEl: ".s2next",
+                prevEl: ".s2prev",
+            },
+        });
+    </script>
 </body>
+
 </html>

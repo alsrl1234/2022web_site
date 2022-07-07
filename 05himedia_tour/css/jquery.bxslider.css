@@ -30,8 +30,8 @@ ul.bxslider {
 /** THEME
 ===================================*/
 .bx-wrapper {
-  -moz-box-shadow: 0 0 5px #ccc;
-  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
   box-shadow: 0 none;
   border: 0 none;
   background: #fff;
