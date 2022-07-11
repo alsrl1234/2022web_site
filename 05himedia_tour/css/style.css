@@ -32,7 +32,7 @@ p.title{left:calc( 50% - 180px);line-height: 14px;font-weight: bold;}
 .menu_area li:hover a{color: black;}
 
 section{background-image: url(../images/g\ \(1\).jpg);background-repeat: no-repeat;background-position: center;
-background-size: cover;padding-top: 60px;  
+background-size: cover;padding-top: 60px;margin-bottom: 20px; 
 }
 section .section_wrap{width: 980px;height: 1067px;margin: 0 auto;position: relative;}
 
@@ -94,10 +94,10 @@ section .ani04{
 }
 
 
-section .section01{width: 482px;height: 556px;background-color: #999;position: absolute;top: 0;left: 0;}
+section .section01{width: 482px;height: 556px;position: absolute;top: 0;left: 0;}
 section .section02{width: 482px;height: 556px;position: absolute;top: 0;right: 0;padding: 32px 24px;}
-section .section03{width: 482px;height: 495px;background-color: #555; position: absolute;bottom: 0; left: 0;}
-section .section04{width: 482px;height: 495px;background-color: #222;position: absolute;bottom: 0;right: 0;}
+section .section03{width: 980px;height: 240px; position: absolute;bottom: 255px; left: 0;}
+section .section04{width: 980px;height: 240px;position: absolute;bottom: 0;right: 0;}
 
 .section01 .reserv_wrap{width: 482px;height: 300px;background-color: palegreen;margin-bottom: 16px;position: relative;padding-left: 132px;}
 .section01 .reserv_wrap li{padding: 20px 36px 20px 36px;background-color: white;height: 300px;}
@@ -148,15 +148,19 @@ section .section04{width: 482px;height: 495px;background-color: #222;position: a
 .section01 .content2{width: 233px;height: 240px;background-color: pink;float: left;}
 
 
-
 .section02 h2{font-size: 64px;font-weight: bold;letter-spacing: 1px;line-height: 50px;}
 .section02 span::after{content: "";display: block;width: 80px;height: 4px;background-color: #222;margin: 10px 0 10px 274px;}
 .section02 p{font-size: 32px;line-height: 40px;}
 
-.section03 > div{
+
+
+
+
+.section03 > div,.section04 > div{
     width: 233px;height: 240px;background-color: skyblue;float: left;
-    position: relative;
+    position: relative;margin-right: 16px;
 }
+.section03 > div:nth-child(4),.section04 > div:nth-child(4){margin-right: 0;}
 
 
 .mySwiper{width: 233px;height: 240px;}
@@ -183,22 +187,34 @@ section .section04{width: 482px;height: 495px;background-color: #222;position: a
 
 
 
+
+
 /* .section03 div,.section04 div{width: 233px;height: 240px;background-color: skyblue;float: left;} */
-.section03 .content1,.section04 .content1{margin-bottom: 16px;margin-right: 16px;}
-.section03 .content3,.section04 .content3{margin-right: 16px;}
+/* .section03 .content1,.section04 .content1{margin-bottom: 16px;margin-right: 16px;}
+.section03 .content3,.section04 .content3{margin-right: 16px;} */
 
 
-.section03 .content1{width: 233px;height: 240px;background-color: pink;margin-right: 16px;float: left;position: relative;}
-.section03 .content1 li,.section01 .content2 li{width: 233px;height: 240px;background-size: cover;}
+.section03 >div{margin-right: 16px;}
+.section03 >div:nth-child(4){margin-right: 0;}
 
-.section03 .content1 li.a{background-image: url(../images/italia.jpg);}
-.section03 .content1 li.b{background-image: url(../images/usa.jpg);}
-.section03 .content1 li.c{background-image: url(../images/france\ \(3\).jpg);}
 
-/* 
-.section03 .content2 li.a{background-image: url(../images/hongkong.jpg);}
-.section03 .content2 li.b{background-image: url(../images/vietnam.jpg);}
-.section03 .content2 li.c{background-image: url(../images/japan.jpg);} */
-.section03 .content1 p,.section03 .content2 p{width: 233px;height: 60px;background-color:rgba(42, 111, 175, 0.404);position: absolute;bottom: 0;line-height: 50px;text-align: center;color: white;}
+
+
+
+.section03 >div p{width: 233px;height: 60px;background-color:rgba(45, 179, 150, 0.801);position: absolute;bottom: 0;line-height: 20px;text-align: start;color: white;padding: 10px 15px;}
 .section03 .content1 span,.section03 .content2 span{margin: 0 15px;color: gold;}
-.section03 .content2 p{background-color: rgb(80, 107, 57);}
+.section03 .content2 p{background-color: rgba(212, 214, 99, 0.651);}
+
+.section03 .content3{background-image: url(../images/03여행05.jpg);background-size: cover;}
+.section03 .content4{background-image: url(../images/03여행06.jpg);background-position-y: 16px;}
+.section03 .content3 p{background-color: rgba(39, 36, 48, 0.651);font-size: 20px;font-weight: 550;}
+.section03 .content3 span{font-size: 16px;font-weight: 400;}
+
+.section03 .content4 .news{font-size: 16px;font-weight: bold;color: #666;padding: 20px;letter-spacing: -3px;line-height: 25px;}
+.section03 .content4 p{background-color: rgb(59, 120, 189);font-size: 20px;font-weight: 500;}
+
+footer{width: 100%;}
+.footerWrap{width: 980px;height: 120px;margin: 0 auto;padding: 10px 0;}
+.footerWrap ul{display: flex;justify-content: start;margin-bottom: 10px;}
+.footerWrap li{margin-right: 20px;font-size: 14px;font-weight: 550;color: #333;}
+.footerWrap p{line-height: 20px;}
