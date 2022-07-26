@@ -1,17 +1,20 @@
 @charset "utf-8";
 /********** css responsive init **********/
 body{font-family: 'Noto Sans KR', sans-serif;}
-#header{height: 800px;background-image: url(../images/header_bg1.png);background-repeat: no-repeat;background-size: cover;}
-.container{height: 72px;margin: 0 auto;background-color: rgba(0, 0, 0, 0.6);}
+
+.container{margin: 0 auto;}
+
+#header{width: 100%; background-color: rgba(0, 0, 0, 0.6);position: fixed;}
+
+
 .navbarWrap{display: flex;padding-left: 58px;align-items: center;justify-content: space-between;}
 .navbarWrap h1{width: 130px;height: 50px; background-image: url(../images/logos_header.png);background-position: 6px -57px;}
 .navbarWrap h1>a{display: block;width: 130px;height: 50px;}
 .navbar01>ul{display: flex;justify-content: center;align-items: center;padding-left: 210px;}
-.navbar01>ul>li{font-size: 16px;display: flex;justify-content: center;align-items: center;}
+.navbar01>ul>li{font-size: 16px;display: flex;justify-content: center;align-items: center;position: relative;}
 .navbar01>ul>li>a{color: white;display: block;padding: 0 30px;line-height: 72px;}
 
 
-.navbar01 .submenu{display: none;}
 
 .navbar02 {width: 410px;height: 72px;display: flex;justify-content: space-between;align-items: center;}
 .searchWrap{width: 196px;height: 40px;display: flex;justify-content: space-between;align-items: center;}
@@ -25,6 +28,23 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .rerv i{padding-left: 5px;}
 
 
+/* .navbar01 .submenu{display: none;} */
+.navbar01>ul>li .submenu{background-color: #fff;position: absolute;top: 72px;width: 100%;text-align: center;padding: 20px 0;visibility: hidden;opacity: 0;transform: translateY(20px);transition: 0.3s;}
+.navbar01>ul>li:hover .submenu{visibility: visible;opacity: 1;transform: translateY(0px);}
+
+
+.visualWrap{
+    
+   
+}
+.visualWrap .slide{
+    height: 100vh;
+    /* background-image: url(../images/header_bg1.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;display: flex;
+    width: 1920px;
+}
 
 
 /********** css responsive **********/
