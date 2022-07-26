@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style01.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(function(){
+            let slide = $(".slider").bxSlider({
+                mode:"fade",
+                controls:false
+            })
+
+            $(".prev").click(function(){
+                slide.goToPrevSlide();
+            })
+            $(".next").click(function(){
+                slide.goToNextSlide();
+            })
+        })
+    </script>
 </head>
 <body>
     <header id="header">
@@ -89,23 +106,64 @@
             <li onclick="location.href='sub01_01.html'">
                 <div>
                     <img src="images01/icon01_01.png" alt="">
-                    <h3>뉴스레터111111111</h3>
+                    <h3>뉴스레터</h3>
                 </div>
             </li>
             <li>
                 <img src="images01/icon01_06.png" alt="">
             </li>
-            <li>3</li>
             <li>
-                <div>
-                    <img src="images01/icon01_01.png" alt="">
-                    <h3>뉴스레터111111111</h3>
+                <ul class="slider">
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>뉴스</h3>
+                                    <p>1111Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, in.</p>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images01/img01_02.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>뉴스</h3>
+                                    <p>333Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, in.</p>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images01/img01_01.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>뉴스</h3>
+                                    <p>11111Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, in.</p>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images01/img01_02.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="sBtn">
+                    <div class="prev"><img src="images01/btn01_01.jpg" alt=""></div>
+                    <div class="next"><img src="images01/btn01_02.jpg" alt=""></div>
                 </div>
             </li>
             <li>
                 <div>
                     <img src="images01/icon01_01.png" alt="">
-                    <h3>뉴스레터111111111</h3>
+                    <h3>뉴스레터</h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images01/icon01_01.png" alt="">
+                    <h3>뉴스레터</h3>
                 </div>
             </li>
             <li style="background-image: url(images01/img01_03.jpg);">
@@ -129,13 +187,13 @@
             <li >
                 <div>
                     <img src="images01/icon01_01.png" alt="">
-                    <h3>뉴스레터111111111</h3>
+                    <h3>뉴스레터</h3>
                 </div>
             </li>
             <li>
                 <div>
                     <img src="images01/icon01_01.png" alt="">
-                    <h3>뉴스레터111111111</h3>
+                    <h3>뉴스레터</h3>
                 </div>
             </li>
             <li style="background-image: url(images01/img01_05.jpg);">
@@ -148,6 +206,6 @@
     </section>
 
     
-<script src="js/script01.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
