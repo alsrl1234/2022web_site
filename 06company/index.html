@@ -10,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
 </head>
 
 <body>
@@ -21,7 +24,8 @@
             <h1><a href=""></a></h1>
             <nav class="navbar01">
                 <ul>
-                    <li><a href="">NOW</a>
+                    <li>
+                        <a href="">NOW</a>
                         <ul class="submenu">
                             <li><a href="#">sub01_01</a></li>
                             <li><a href="#">sub01_02</a></li>
@@ -29,7 +33,8 @@
                             <li><a href="#">sub01_04</a></li>
                         </ul>
                     </li>
-                    <li><a href="">사업소개</a>
+                    <li>
+                        <a href="">사업소개</a>
                         <ul class="submenu">
                             <li><a href="#">sub01_01</a></li>
                             <li><a href="#">sub01_02</a></li>
@@ -37,7 +42,8 @@
                             <li><a href="#">sub01_04</a></li>
                         </ul>
                     </li>
-                    <li><a href="">글로벌네트워크</a>
+                    <li>
+                        <a href="">글로벌네트워크</a>
                         <ul class="submenu">
                             <li><a href="#">sub01_01</a></li>
                             <li><a href="#">sub01_02</a></li>
@@ -45,7 +51,8 @@
                             <li><a href="#">sub01_04</a></li>
                         </ul>
                     </li>
-                    <li><a href="">회사정보</a>
+                    <li>
+                        <a href="">회사정보</a>
                         <ul class="submenu">
                             <li><a href="#">sub01_01</a></li>
                             <li><a href="#">sub01_02</a></li>
@@ -53,7 +60,8 @@
                             <li><a href="#">sub01_04</a></li>
                         </ul>
                     </li>
-                    <li><a href="">지속가능경영</a>
+                    <li>
+                        <a href="">지속가능경영</a>
                         <ul class="submenu">
                             <li><a href="#">sub01_01</a></li>
                             <li><a href="#">sub01_02</a></li>
@@ -61,7 +69,8 @@
                             <li><a href="#">sub01_04</a></li>
                         </ul>
                     </li>
-                    <li><a href="">고객지원</a>
+                    <li>
+                        <a href="">고객지원</a>
                         <ul class="submenu">
                             <li><a href="#">sub01_01</a></li>
                             <li><a href="#">sub01_02</a></li>
@@ -74,36 +83,144 @@
             <nav class="navbar02">
                 <div class="searchWrap">
                     <div class="leng"><a href="">KO<i class="fa-solid fa-angle-down"></i></a></div>
-                    <div class="search"></div>
+                    <div class="search_icon"></div>
                     <div class="maintoggle"></div>
                 </div>
                 <div class="rerv">
                     <a href="">택배 조회/예약 <i class="fa-solid fa-caret-down"></i></a>
                 </div>
             </nav>
+            <div class="toggle">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
 
-        <div class="toggle">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div class="overlay"></div>
+        <div class="navbarClone">
+            <div class="mMenu"></div>
         </div>
-        <!-- </div>
-    <div class="overlay"></div>
-    <div class="navbarClone">
-        menu
-    </div> -->
     </header>
 
     <div class="visualWrap">
-        <ul class="slideWpra">
-            <li class="slide"style="background-image: url(./images/header_bg1.png);"></li>
-            <li class="slide"style="background-image: url(./images/header_bg2.jpg);"></li>
-            <li class="slide"style="background-image: url(./images/header_bg3.jpg);"></li>
-            <li class="slide"style="background-image: url(./images/header_bg4.png);"></li>
+        <ul class="slideWrap">
+            <li class="slide mbSlide1" style="background-image: url(./images/header_bg2.jpg);">
+                <h2><a href="">'물류센터에 로봇이 살고 있다?'<br>물 흐르듯 자연스러운 물류를 만드는<br>혁신기술 TOP 3</a></h2>
+                <p><a href="">로봇,AI,빅데이터 바탕의 첨단 물류 기술은 물류 현장뿐만 아니라 우리의 생활을 혁신적으로 변화시키고 있습니다.<br>첨단 물류 기술을 바탕으로 물류의 가치와
+                        감동을 전하는 CJ대한통운 혁신 물류 솔루션의 비밀을 공개합니다.</a></p>
+                <span><a href="">더 알아보기</a></span>
+            </li>
+            <li class="slide mbSlide2" style="background-image: url(./images/header_bg1.png);">
+                <h2><a href="">물류의 'NEXT LEVEL'을 만드는<br>미래기술 챌린저를 소개합니다</a></h2>
+                <p><a href="">'혁신기술기업' CJ대한통운은 젊은 생각을 가진 인재들과 함께<br>물류의 미래를 그려나가고 있습니다.<br>상상을 현실로 만들며 물류의 넥스트 레벨을 만들어가는
+                        주인공,<br>'미래기술 챌린저' 4인을 소개합니다.</a></p>
+                <span><a href="">더 알아보기</a></span>
+            </li>
+            <li class="slide mbSlide3" style="background-image: url(./images/header_bg3.jpg);">
+                <h2><a href="">이커머스 '무한경쟁' 시대,<br>경쟁력 향상을 위해<br>꼭 짚어야 할 3가지 핵심 포인트</a></h2>
+                <p><a href="">이커머스 시장이 진화함에 따라 물류산업도 혁신을 거듭하고 있습니다. 물류를 기반으로<br>소비자의 마음을 사로잡고 사업을 성장시키기 위한 3가지 핵심
+                        포인트,<br>'이커머스 물류의 리더'CJ대한통운이 알려드립니다.</a></p>
+                <span><a href="">더 알아보기</a></span>
+            </li>
+            <li class="slide mbSlide4" style="background-image: url(./images/header_bg4.png);">
+                <h2><a href="">자동화는 극대화, 수작업은 최소화하는<br>스마트 풀필먼트 센터의 데이터 활용법</a></h2>
+                <p><a href="">소비자와 이커머스 셀러의 니즈를 모두 충족할 수 있는 맞춤형 스마트 물류,어떻게 실현할까요?<br>빠르고 정확한 이커머스 물류의 핵심은 바로
+                        데이터입니다.<br>데이터로 시작하고 데이터로 마무리되는<br>CJ대한통운의 스마트 풀필먼트 센터의 물류 프로세스를 소개합니다</a></p>
+                <span><a href="">더 알아보기</a></span>
+            </li>
         </ul>
+        <div class="next">
+            <img src="./images/bg_MainTop_arrow.png" alt="">
+        </div>
+        <div class="prev">
+            <img src="./images/bg_MainTop_arrow.png" alt="">
+        </div>
     </div>
-    <section style="height: 1000px;"></section>
+    <div class="mainSearch">
+        <p>운송장 번호를 입력하시고 실시간 택배 배송정보를 확인하세요.</p>
+        <div class="inpBox">
+            <input class="inp" type="text" placeholder="–를 제외한 숫자만 입력해주세요.">
+            <div class="mainSrIcon"></div>
+        </div>
+    </div>
+
+    <section class="contents1">
+        <ul>
+            <li style="background-image:url(./images/content_img01.png)">1</li>
+            <li style="background-image:url(./images/content_img02.png)">2</li>
+            <li style="background-image:url(./images/content_img03.png)">3</li>
+            <li style="background-image:url(./images/content_img04.png)">4</li>
+            <li style="background-image:url(./images/content_img05.png)">5</li>
+            <li style="background-image:url(./images/content_img06.png)">6</li>
+            <li style="background-image:url(./images/content_img07.png)">7</li>
+            <li style="background-image:url(./images/content_img08.png)">8</li>
+        </ul>
+    </section>
+    <section class="contents2">
+        <div class="videoWrap">
+            <video width="1320" autoplay loop src="./images/main_1122.mp4"></video>
+            <ul>
+                <div class="info_txt">
+                    <h3>사업소개</h3>
+                    <p>핵심 사업을 기반으로 고객에 최전화된 One-Stop 물류솔루션을 제공합니다</p>
+                </div>
+                <li>
+                    <div class="iconWrap">
+                        <div class="conIcon"></div>
+                        <h4>이커머스 물류</h4>
+                        <p>이커머스 물류의 혁신,e-풀필먼트로<br>진정한 One-Stop 물류 솔루션을 경험하세요.</p>
+                        <a href="">자세히보기&nbsp;&nbsp;&nbsp;→</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconWrap">
+                        <div class="conIcon"></div>
+                        <h4>택배</h4>
+                        <p>택배 산업의<br>패러다임 혁신을 주도합니다.</p>
+                        <a href="">자세히보기&nbsp;&nbsp;&nbsp;→</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconWrap">
+                        <div class="conIcon"></div>
+                        <h4>계약물류</h4>
+                        <p>최신 물류설비와 컨설팅 역량으로<br>체계적·효율적 운영을 지원합니다.</p>
+                        <a href="">자세히보기&nbsp;&nbsp;&nbsp;→</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconWrap">
+                        <div class="conIcon"></div>
+                        <h4>포워딩&국제특송</h4>
+                        <p>고객에게 최적화된<br>최상의 물류 프로세스를 설계합니다.</p>
+                        <a href="">자세히보기&nbsp;&nbsp;&nbsp;→</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconWrap">
+                        <div class="conIcon"></div>
+                        <h4>프로젝트 물류</h4>
+                        <p>글로벌 EPC 현장에 필요한<br>맞춤형 솔루션을 제공합니다.</p>
+                        <a href="">자세히보기&nbsp;&nbsp;&nbsp;→</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconWrap">
+                        <div class="conIcon"></div>
+                        <h4>항만하역 & 운송</h4>
+                        <p>화물 특성을 고려한<br>최상의 서비스를 제공합니다.</p>
+                        <a href="">자세히보기&nbsp;&nbsp;&nbsp;→</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contents3">
+        <ul>
+            <li></li>
+        </ul>
+    </section>
     <script src="js/script.js"></script>
 </body>
 
