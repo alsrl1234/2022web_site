@@ -711,7 +711,11 @@ body {
         padding-left: 100px;
         border: 0 none;
     }
-    .mInp::placeholder{color: #027ac4;font-weight: bold;}
+
+    .mInp::placeholder {
+        color: #027ac4;
+        font-weight: bold;
+    }
 
     .msrIcon {
         width: 50px;
@@ -723,10 +727,47 @@ body {
         cursor: pointer;
     }
 
-    .submenu{display: none;}
-    /* .navbar01 ul{height: 427px;} */
-    .navbar01 ul li{font-size: 50px;}
+    .submenu {
+        display: none;
+    }
 
+    .mMenu ul {
+        height: 427px;
+    }
+
+    .mMenu>ul>li {
+        position: relative;
+        font-weight: 600;
+        font-size: 18px;
+        color: #333;
+        border-bottom: 1px solid #e3e4e5;
+        padding-left: 25px;
+        padding-right: 67px;
+        line-height: 60px;
+    }
+
+    .mMenu>ul>li::before{content: '';
+        background: #333;
+        position: absolute;
+        display: inline-block;
+        width: 3px;
+        height: 17px;
+        right: 25px;
+        top: 50%;
+        margin-top: -9px;
+        border: none;}
+
+    .mMenu>ul>li::after{content: '';
+        background: #333;
+        position: absolute;
+        display: inline-block;
+        width: 3px;
+        height: 17px;
+        right: 25px;
+        top: 50%;
+        margin-top: -9px;
+        border: none;
+        transform: rotate(90deg);}
 
     .slideWrap h2 {
         font-size: 50px;
