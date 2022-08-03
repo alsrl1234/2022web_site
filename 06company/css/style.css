@@ -726,16 +726,19 @@ body {
         background-repeat: no-repeat;
         cursor: pointer;
     }
-
-    .submenu {
-        display: none;
+    
+    .mMenu .submenu {
+        /* display: none; */
     }
 
-    .mMenu ul {
-        height: 427px;
+    .mMenu>ul>li:nth-child(1) .submenu {
+        display: block;
     }
 
-    .mMenu>ul>li {
+
+
+
+    .mMenu ul>li {
         position: relative;
         font-weight: 600;
         font-size: 18px;
@@ -746,18 +749,12 @@ body {
         line-height: 60px;
     }
 
-    .mMenu>ul>li::before{content: '';
-        background: #333;
-        position: absolute;
-        display: inline-block;
-        width: 3px;
-        height: 17px;
-        right: 25px;
-        top: 50%;
-        margin-top: -9px;
-        border: none;}
+    .mMenu ul>li>ul>li{font-weight: normal;font-size: 14px;
 
-    .mMenu>ul>li::after{content: '';
+    }
+    
+    .mMenu >ul>.mbSub>a::before {
+        content: '';
         background: #333;
         position: absolute;
         display: inline-block;
@@ -767,7 +764,21 @@ body {
         top: 50%;
         margin-top: -9px;
         border: none;
-        transform: rotate(90deg);}
+    }
+
+    .mMenu >ul>.mbSub>a::after {
+        content: '';
+        background: #333;
+        position: absolute;
+        display: inline-block;
+        width: 3px;
+        height: 17px;
+        right: 25px;
+        top: 50%;
+        margin-top: -9px;
+        border: none;
+        transform: rotate(90deg);
+    }
 
     .slideWrap h2 {
         font-size: 50px;
