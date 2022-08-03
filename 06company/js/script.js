@@ -28,5 +28,15 @@ $(".toggle").click(function(){
 $(".overlay").click(function(){
     $(".navbarClone").css("left","-100%");
     $(".overlay").hide();
+})
+$(".mClose").click(function(){
+    $(".navbarClone").css("left","-100%");
+    $(".overlay").hide();
 });
+// $(".navbarWrap").clone().appendTo(".mMenu");
 $(".navbar01>ul").clone().appendTo(".mMenu");
+$(".contents2 li").click(function(){
+    $(".contents2 li").removeClass("click")
+    $(this).addClass("click")
+    
+})
