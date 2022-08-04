@@ -394,7 +394,6 @@ body {
     width: 1320px;
     height: 720px;
     margin: 0 auto;
-    background-color: aqua;
     position: relative;
 }
 
@@ -519,7 +518,7 @@ body {
 .contents3>ul{width: 1320px;background-color: pink; margin: 80px auto;
 display: flex;flex-wrap: wrap;}
 .contents3>ul>li{background-color: orange;height: 660px;flex-grow: 1;flex-basis: 25%;}
-.contents3>ul>li:nth-child(1){}
+.contents3>ul>li:nth-child(1){background: #2E4D8E;}
 
 /********** css responsive **********/
 @media (max-width: 1600px) {
