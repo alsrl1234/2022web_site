@@ -514,7 +514,12 @@ body {
 
 
 
-/* .contents3{width: 1320px;height: 660px;background-color: pink; margin: 80px auto;} */
+.contents3{margin: 80px auto;}
+
+.contents3>ul{width: 1320px;background-color: pink; margin: 80px auto;
+display: flex;flex-wrap: wrap;}
+.contents3>ul>li{background-color: orange;height: 660px;flex-grow: 1;flex-basis: 25%;}
+.contents3>ul>li:nth-child(1){}
 
 /********** css responsive **********/
 @media (max-width: 1600px) {
@@ -726,34 +731,59 @@ body {
         background-repeat: no-repeat;
         cursor: pointer;
     }
-    
+
     .mMenu .submenu {
-        /* display: none; */
+        display: none;
     }
 
     .mMenu>ul>li:nth-child(1) .submenu {
-        display: block;
+        /* display: block; */
     }
 
 
 
 
-    .mMenu ul>li {
-        position: relative;
+    .mMenu>ul>li>ul {
+        padding: 0 25px;
+
+
+
+
+    }
+
+    .mMenu>ul>li>ul.submenu>li {
+        font-weight: normal;
+        font-size: 14px;
+
+    }
+
+    .mMenu>ul>li>ul.submenu>li>a {
+        font-size: 16px;
+        color: #333;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        border-bottom: 1px solid #e3e4e5;
+        padding:0 18px;
+
+    }
+    .fa-angle-right{padding-top: 3px;}
+
+    .mMenu>ul>li>a {
+        line-height: 60px;
+        display: block;
         font-weight: 600;
         font-size: 18px;
         color: #333;
-        border-bottom: 1px solid #e3e4e5;
+        position: relative;
         padding-left: 25px;
         padding-right: 67px;
-        line-height: 60px;
+        border-bottom: 1px solid #e3e4e5;
     }
 
-    .mMenu ul>li>ul>li{font-weight: normal;font-size: 14px;
-
-    }
-    
-    .mMenu >ul>.mbSub>a::before {
+    .mMenu>ul>.mbSub>a::before {
         content: '';
         background: #333;
         position: absolute;
@@ -766,7 +796,13 @@ body {
         border: none;
     }
 
-    .mMenu >ul>.mbSub>a::after {
+    .mMenu>ul>.mbSub>a.on::before {
+        content: '';
+       display: none;
+    }
+
+
+    .mMenu>ul>.mbSub>a::after {
         content: '';
         background: #333;
         position: absolute;
@@ -778,6 +814,11 @@ body {
         margin-top: -9px;
         border: none;
         transform: rotate(90deg);
+    }
+    .mMenu>ul>.mbSub>a.on::after {
+        content: '';
+        background: #027ac4;
+       
     }
 
     .slideWrap h2 {
