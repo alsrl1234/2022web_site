@@ -15,6 +15,7 @@ $(".prev").click(function () {
 
 
 
+
 $(".navbar01>ul>li").hover(function () {
     $(this).addClass("on");
 }, function () {
@@ -58,3 +59,13 @@ $(".mMenu>ul>li>a").click(function (e) {
         $(this).addClass("on")
     }
 })
+
+// if(matchMedia("screen and (max-width: 816px)").matches){
+//     const slide2 = $(".mbSlide2").bxSlider({
+        
+//     });
+// }
+       
+      
+
+  
