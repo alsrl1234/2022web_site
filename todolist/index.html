@@ -103,6 +103,8 @@
 
     <script>
         let listData = [];
+
+        let viewData = document.querySelector(".viewData")
         let inp = document.querySelector(".inp")
         let btn1 = document.querySelector(".btn1")
         let btn2 = document.querySelector(".btn2")
@@ -115,7 +117,7 @@
                 let valueData = JSON.stringify(listData)
                 localStorage.setItem("todo_Data", valueData)
 
-                inp.value = ''
+                inp.value = '';
                 // console.log(listData)
                 view();
 
@@ -140,7 +142,7 @@
                 listData = JSON.parse(localData)
                 
             }
-            let todoData = ''
+            todoData = ''
             listData.forEach(function (item, i) {
                 todoData += `<li>`
                 if (item.done == true) {
@@ -162,12 +164,12 @@
                 todoData += `</div>`
                 todoData += `</li>`
 
-                let viewData = document.querySelector(".viewData")
-                viewData.innerHTML = todoData
+                
                 Adel()
-
-
+                
+                
             });
+            viewData.innerHTML = todoData
 
 
         }
@@ -177,21 +179,19 @@
                 listData = [];
                 todoData = ''
 
-                let valueData = JSON.stringify(listData)
-                localStorage.setItem("todo_Data", valueData)
+                let valueData = JSON.stringify(listData);
+                localStorage.setItem("todo_Data",valueData)
 
+           
                 viewData.innerHTML = todoData
-
-
-
             })
         }
 
-        function del(idx) {
-            listData.splice(idx, 1);
+        function del(idx){
+            listData.splice(idx,1);
 
-            let valueData = JSON.stringify(listData)
-            localStorage.setItem("todo_Data", valueData)
+            let valueData = JSON.stringify(listData);
+            localStorage.setItem("todo_Data",valueData);
 
             view()
 
@@ -199,6 +199,7 @@
 
         function done(idx) {
             listData[idx].done = !listData[idx].done;
+
             let valueData = JSON.stringify(listData)
                 localStorage.setItem("todo_Data", valueData)
 
