@@ -5,6 +5,6 @@
 1. college https://alsrl1234.github.io/2022web_site/04college
 1. tour https://alsrl1234.github.io/2022web_site/05himedia_tour
 1. company https://alsrl1234.github.io/2022web_site/06company
-1. todolist https://alsrl1234.github.io/2022web_site/totolist
+1. todolist https://alsrl1234.github.io/2022web_site/todolist
 
 
