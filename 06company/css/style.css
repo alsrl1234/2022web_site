@@ -594,26 +594,26 @@ body {
     margin-bottom: 80px;
 }
 
-.contents4>ul {
+.contents4 .swiper-wrapper {
     width: 1320px;
     display: flex;
 }
 
-.contents4>ul>li {
+.contents4 .swiper-wrapper>.slide2_item {
     flex-grow: 1;
     flex-basis: 50%;
-    background-color: pink;
     height: 330px;
     padding: 47px 40px;
     color: white;
 }
 
-.contents4>ul>li h5 {
+
+.contents4 .swiper-wrapper>.slide2_item h5 {
     font-size: 32px;
     font-weight: bold;
 }
 
-.contents4>ul>li h5::after {
+.contents4 .swiper-wrapper>.slide2_item h5::after {
     content: "";
     display: block;
     width: 50px;
@@ -622,11 +622,11 @@ body {
     margin: 20px 0;
 }
 
-.contents4>ul>li p {
+.contents4 .swiper-wrapper>.slide2_item p {
     margin-bottom: 40px;
 }
 
-.contents4>ul>li a {
+.contents4 .swiper-wrapper>.slide2_item a {
     display: block;
     width: 168px;
     height: 49px;
@@ -1201,39 +1201,33 @@ body {
 
     .contents3{display: none;}
 
-
     .contents4 {
-       
-        width: 100%;
+        
+        width: 800px;
+        height: 330px;
         margin: 0 auto;
         margin-bottom: 80px;
     }
-
-    .contents4>ul {
-       
-        position: relative;
-        width: 100%;
-        display: block;
-    }
-
-    .contents4>ul>li {
-        position: absolute;
-        width: 100%;
-        margin: 0 auto;
+    
+   
+    
+    .swiper-wrapper>.slide2_item {
+        flex-grow: initial!important;
+        flex-basis: initial!important;
         height: 330px;
         padding: 47px 40px;
         color: white;
-        background-repeat: no-repeat;
-        background-size: cover
-        !important
     }
+    
+    .slide2_item{background-size: cover;}
 
-    .contents4>ul>li h5 {
+
+    .swiper-wrapper>.slide2_item h5 {
         font-size: 32px;
         font-weight: bold;
     }
-
-    .contents4>ul>li h5::after {
+    
+    .swiper-wrapper>.slide2_item h5::after {
         content: "";
         display: block;
         width: 50px;
@@ -1241,12 +1235,12 @@ body {
         background-color: #fff;
         margin: 20px 0;
     }
-
-    .contents4>ul>li p {
+    
+    .swiper-wrapper>.slide2_item p {
         margin-bottom: 40px;
     }
-
-    .contents4>ul>li a {
+    
+    .swiper-wrapper>.slide2_item a {
         display: block;
         width: 168px;
         height: 49px;
@@ -1255,6 +1249,8 @@ body {
         text-align: center;
         line-height: 49px;
     }
+
+    
 
     
     .ftContentWrap1{width: 100%;padding: 0 20px;}
@@ -1272,14 +1268,6 @@ body {
 
 
 }
-
-
-
-
-
-
-
-
 
 
 

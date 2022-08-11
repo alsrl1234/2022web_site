@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style02.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div> -->
+    <section class="contents4 swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="slide2_item swiper-slide" style="background-image: url(./images/section4_img1.png);">
+                    <h5 class="slide2_txt">지속가능경영</h5>
+                    <p>사람과 생활에 행복을 주는 기업으로<br>함께 하겠습니다.</p>
+                    <a href="">자세히보기</a>
+                </div>
+                <div class="slide2_item swiper-slide" style="background-image: url(./images/section4_img2.png);">
+                    <h5>인재채용</h5>
+                    <p>창의력을 발휘하여 발전하는<br>인재를 기다립니다.</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+    </section>
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      </script>
+</body>
+</html>
