@@ -104,7 +104,7 @@ body {
     border-bottom: 3px solid #027ac4;
 }
 
-
+.fa-angle-right{padding: 0 5px;}
 
 
 .navbar02 {
@@ -635,6 +635,24 @@ body {
     text-align: center;
     line-height: 49px;
 }
+
+
+
+.swiper-pagination-bullet {
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+    background: var(--swiper-pagination-bullet-inactive-color,#fff);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color,var(--swiper-theme-color));
+}
+
+
+
+
+
+
+
 
 
 
