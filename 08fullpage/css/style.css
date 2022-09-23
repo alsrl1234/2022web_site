@@ -173,9 +173,13 @@
     border: 0px solid #000;
 }
 
+
+
 .nav_icon>ul {
     display: flex;
+    margin: 0;
 }
+.nav_icon>ul>li{position: relative;}
 
 .nav_icon>ul>li>a {
     width: 64px;
@@ -198,9 +202,13 @@
 }
 
 .share_link{
+    padding: 0;
+    position: absolute;
     display: none;
-    padding: 10px 0 0 0; 
-    width: 100%;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 42px;
     height: 148px;
     background-position: center;
     background-repeat: no-repeat;
@@ -213,11 +221,16 @@
 }
 
 .share_link li{
+    position: relative;
     width: 42px;
     height: 43px;
     margin: 0 auto;
 }
 .share_link li a{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: block;
     width: 42px;
     height: 42px;
