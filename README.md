@@ -6,5 +6,7 @@
 1. tour https://alsrl1234.github.io/2022web_site/05himedia_tour
 1. company https://alsrl1234.github.io/2022web_site/06company
 1. todolist https://alsrl1234.github.io/2022web_site/todolist
+1. todolist https://alsrl1234.github.io/2022web_site/08fullpage
+
 
 

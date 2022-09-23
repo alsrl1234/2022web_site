@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>fullpage</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js'
+        integrity='sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK'
+        crossorigin='anonymous'></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <div class="nav_top">
+        <div class="toggle"></div>
+        <div class="nav_icon">
+            <ul>
+                <li>
+                    <a href="http://pf.kakao.com/_vxfxkeb" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCQkFXeESVL2QlkHT89N2_zA" target="_balnk"></a>
+                </li>
+                <li>
+                    <button class="share"></button>
+                    <ul class="share_link">
+                        <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fhit2.nexon.com%252Fpre-register%26title%3D%255BHIT2%255D%2BHIT%2BTHE%2BWORLD%26description%26quote%26hashtag&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ko_KR" target="_balnk"></a></li>
+                        <li><a href="https://twitter.com/intent/tweet?text=%5BHIT2%5D%20HIT%20THE%20WORLD%20%EC%83%88%EB%A1%AD%EA%B2%8C%20%EC%8B%9C%EC%9E%91%EB%90%98%EB%8A%94%20%EC%97%AC%EC%A0%95%EC%97%90%20%EB%AA%A8%ED%97%98%EA%B0%80%EB%8B%98%EC%9D%84%20%EC%B4%88%EB%8C%80%ED%95%A9%EB%8B%88%EB%8B%A4.&url=https%3A%2F%2Fhit2.nexon.com%2Fpre-register" target="_balnk"></a></li>
+                        <li><a href="" class="url_copy"data-clipboard-text="https://hit2.nexon.com/pre-register#section1"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://hit2.nexon.com/main" target="_blank" ></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="toggle_menu">
+        <div class="sub_logo"></div>
+        <ul class="menu_list">
+            <li><a href="#m1st" data-menuanchor="m1st" class="active"></a></li>
+            <li><a href="#m2st" data-menuanchor="m2st" ></a></li>
+            <li><a href="#m3st" data-menuanchor="m3st" ></a></li>
+            <li><a href="#m4st" data-menuanchor="m4st" ></a></li>
+            <li><a href="#m5st" data-menuanchor="m5st" ></a></li>
+            <li><a href="#m6st" data-menuanchor="m6st" ></a></li>
+            <li><a href="#m7st" data-menuanchor="m7st" ></a></li>
+            <li><a href="#m8st" data-menuanchor="m8st" ></a></li>
+        </ul>
+        <div class="menu_link">
+            <a href="http://pf.kakao.com/_vxfxkeb"></a>
+            <a href="https://www.youtube.com/channel/UCQkFXeESVL2QlkHT89N2_zA"></a>
+        </div>
+        <button class="toggle_close"></button>
+    </div>
+
+    <div class="rev_pop">
+        <button class="rev_pop_close"></button>
+        <a href="https://apps.apple.com/kr/app/id1581561666" class="app_down" target="_blank"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.nexon.hit2&referrer=adjust_reftag%3DcNxERmAxVisS5%26utm_source%3DNxK_BRD_Official%26utm_campaign%3DOfficial_Brandpage%26utm_content%3D01_AOS" class="gogle_down" target="_blank"></a>
+        <a href="https://hit2.nexon.com/media/download" class="pc_down" target="_blank"></a>
+    </div>
+
+    <div class="modal_wrap">
+        <div class="gift_pop">
+            <button class="gift_close"></button>
+        </div>
+    </div>
+
+
+    <div id="fullpage">
+        <div class="section" id="page1">
+            <div class="bg_video">
+                <video id="main_loop" data-autoplay muted loop>
+                    <source src="images/main_pc.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="logo"></div>
+            <div class="ad_logo">
+                <div class="ad_txt">
+                    <p>D-DAY</p>
+                </div>
+            </div>
+            <button class="btn_down"></button>
+            
+            
+            
+        </div>
+        <div class="section  bg-info" id="page2">
+            <div class="rev_wrap">
+                <div class="gift"></div>
+                <div class="store_wrap">
+                    <a href="https://apps.apple.com/kr/app/%ED%9E%88%ED%8A%B82/id1581561666" class="store_link1" target="_blank"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nexon.hit2" class="store_link2" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-warning" id="page3">
+            3
+        </div>
+        <div class="section bg-success" id="page4">
+            4
+        </div>
+        <div class="section  bg-info" id="page5">
+            5
+        </div>
+        <div class="section bg-warning" id="page6">
+            6
+        </div>
+        <div class="section bg-success" id="page7">
+            7
+        </div>
+        <div class="section bg-warning" id="page8">
+            8
+        </div>
+        
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+    
+</body>
+
+</html>
