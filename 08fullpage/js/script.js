@@ -28,6 +28,7 @@ $("#fullpage").fullpage({
         }
         if (index == 4){
             swiper.slideTo((0), (1000), false)
+            
         }
 
     }
@@ -197,6 +198,7 @@ $(".class_close").click(function(){
     $(".class_tap ul .tap_list").eq(0).css("display","block")
     $(".class_btn").removeClass("active")
     $(".class_btn").eq(0).addClass("active")
+    $("#class_bg").trigger('play')
 })
 
 
