@@ -35,28 +35,29 @@ $("#fullpage").fullpage({
 })
 
 var swiper = new Swiper(".mySwiper", {
-    // spaceBetween: 30,
     centeredSlides: true,
-    // autoplay: {
-    //   delay: 20,
-    //   disableOnInteraction: false,
-    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    navigation: {
-    },
-    // on: {
-    //     init: function () {
-    //         let sliderVideos = $(".swiper-slide video");
-    //         console.log('swiper initialized');
-    //         sliderVideos.eq(this.realIndex).trigger('play')
-
-    //     },
-    // },
+    
 });
 
+var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 3,
+    grid: {
+      rows: 2,
+    },
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
 
 let sliderVideos = $(".swiper-slide video")
 
@@ -169,8 +170,14 @@ $(".skill_btn").click(function(){
 $(".btn_class").click(function(){
     $("video").trigger("pause")
     $(".class_intro").css("display","block")
-    $(".class_tap ul .tap_list").eq(0).find("#class").trigger("play")
-    $(".class_tap ul .tap_list").eq(0).find("#skill_video").trigger("play")
+    $(".class_tap ul .tap_list").eq(0).find(".class").trigger("play")
+    $(".class_tap ul .tap_list").eq(0).find(".skill_video").trigger("play")
+    $(".class_tap>ul>li").css("display","none")
+    $(".class_tap>ul>li").eq(0).css("display","block")
+    $(".skill_btn").removeClass("active")
+    $(".class_tap ul .tap_list").eq(0).find(".skill_btn").eq(0).addClass("active")
+    $(".skill_txt ul li").css("display","none")
+    $(".class_tap ul .tap_list").eq(0).find(".skill_txt ul li").eq(0).css("display","block")
 })
 
 
@@ -181,19 +188,24 @@ $(".class_btn").click(function(){
     $(this).addClass("active")
     $(".class_tap ul .tap_list").css("display","none")
     $(".class_tap ul .tap_list").eq(i).css("display","block")
-    $("").trigger("pause")
-    $("#class").trigger("pause")
-    $("#skill_video").get(0).currentTime=0;
-    $(".class_tap ul .tap_list").eq(i).find("#class").trigger("play")
-    $(".class_tap ul .tap_list").eq(i).find("#skill_video").trigger("play")
+    $(".skill_video").trigger("pause")
+    $(".class").trigger("pause")
+    $(".skill_video").get(i).currentTime=0;
+    $(".class_tap ul .tap_list").eq(i).find(".class").trigger("play")
+    $(".class_tap ul .tap_list").eq(i).find(".skill_video").trigger("play")
+    $(".skill_btn").removeClass("active")
+    $(".class_tap ul .tap_list").eq(i).find(".skill_btn").eq(0).addClass("active")
+    $(".skill_txt ul li").css("display","none")
+    $(".class_tap ul .tap_list").eq(i).find(".skill_txt ul li").eq(0).css("display","block")
+    
     
          
 })
 
 $(".class_close").click(function(){
     $(".class_intro").css("display","none")
-    $("#skill_video").get(0).currentTime=0;
-    $("#skill_video").trigger("pause")
+    $(".skill_video").get(0).currentTime=0;
+    $(".skill_video").trigger("pause")
     $(".class_tap ul .tap_list").css("display","none")
     $(".class_tap ul .tap_list").eq(0).css("display","block")
     $(".class_btn").removeClass("active")
@@ -201,7 +213,13 @@ $(".class_close").click(function(){
     $("#class_bg").trigger('play')
 })
 
-
+$("#page5 .game_info_wrap>button").hover(function(){
+    let hover_i = $("#page5 .game_info_wrap>button").index(this)+1
+    console.log(hover_i)
+     $("#page5 .game_info_wrap").css("background-image","url(./images/bg05_0"+ hover_i +"on.jpg)")
+},function(){
+    $("#page5 .game_info_wrap").css("background-image","url(./images/bg05.jpg)")
+})
 
 
 
