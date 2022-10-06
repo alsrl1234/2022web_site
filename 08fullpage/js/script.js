@@ -122,7 +122,7 @@ $(".modal_wrap").click(function () {
     $(".modal_wrap .gift_pop").css("display", "none")
     $(".rev_pop").css("display", "none")
     $(".letter_pop").css("display", "none")
-
+    $(".media_bg").css("display","none")
 })
 
 $(".letter").click(function(){
@@ -211,6 +211,19 @@ $(".class_close").click(function(){
     $(".class_btn").removeClass("active")
     $(".class_btn").eq(0).addClass("active")
     $("#class_bg").trigger('play')
+})
+
+$(".media_img").click(function(){
+    $(".media_bg").css("display","block")
+    $(".modal_wrap").css("display","block")
+    let meida_attr = $(this).attr("src")
+    $(".media_bg img").attr("src",meida_attr)
+})
+
+
+$(".media_close").click(function(){
+    $(".media_bg").css("display","none")
+    $(".modal_wrap").css("display","none")
 })
 
 $("#page5 .game_info_wrap>button").hover(function(){
